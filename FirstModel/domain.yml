@@ -1,0 +1,116 @@
+version: '3.1'
+
+intents:
+- start
+- greet
+- engagement_today_happy
+- engagement_today_unhappy
+- affirm
+- bot_challenge
+- deny
+- goodbye
+- mood_great
+- mood_unhappy
+- child_response
+
+responses:
+
+  utter_greet:
+  - text: Hey, Sweetie! How are you doing today?
+  - text: Hello, Sweetheart! It's great to see you. How's your day going?
+  - text: Hi, Buddy! How are you feeling today?
+  - text: Good [morning/afternoon/evening]! How's my Sweetie-pie today?
+  - text: Well, hello Sunshine! How was your day?
+  - text: Hi Sweetie! How are you?
+  - text: Hey there, Buddy! How are you feeling today?
+  - text: Hey Sweetheart! How was your day?
+
+  utter_engagement_today_unhappy:
+  - text: I'm sorry to hear that you're feeling down.
+
+  utter_engagement_today_happy:
+  - text: It's wonderful to hear that you're feeling great!What else did you do?
+  - text: Awesome! Keep up the good mood! Anything else you did today?
+  - text: That sounds great! What else did you do?
+  - text: Anything else you did today?
+
+  utter_happy_day:
+  - text: Wow! That sounds like a fun-filled day!
+  - text: That sounds like a lot of activities! You had a busy day!
+  - text: It's great to hear about your day! You did so many things!
+  - text: Sounds like you had a wonderful time! Keep exploring and having fun!
+
+  utter_propose_game:
+  - text: I know a game that we can play together and have fun, do you want to play?
+  - text: And what about now? let's play a game.
+
+  utter_affirm_image:
+  - text: Yay! Let's do it! I found this interesting picture. Let me know what do you see in this picture.
+    image: https://i.imgur.com/EkLBFrM.jpg
+  - text: Hurray! Here's the first picture. What do you think about this picture?
+    image: https://i.imgur.com/EkLBFrM.jpg
+  - text: Let's play! What comes to your mind first when you see this picture?
+    image: https://i.imgur.com/EkLBFrM.jpg
+
+  utter_what_else:
+  - text: Nice job! What else do you see?
+  - text: That's great! Anything else?
+  - text: Keep going! What else do you see?
+  - text: Cool! Anything else?
+  - text: Anything else catches your eyes?
+
+  utter_next_image:
+  - text: You're doing awesome! Here's another image. What do you see?
+    image: https://i.imgur.com/YD1UP6N.jpg
+  - text: Check out another image. What do you see?
+    image: https://i.imgur.com/YD1UP6N.jpg
+  - text: Good enough! Want to see another image? Here it is.
+    image: https://i.imgur.com/YD1UP6N.jpg
+
+  utter_deny:
+  - text: Alright, no problem. Let me know if you change your mind!
+  - text: No worries! We can do something else if you'd like.
+  - text: Okay, no problem! Is there something else you'd like to do instead?
+  - text: If you don't feel like playing a game right now, that's perfectly fine. Do you want to do something else?
+  - text: Do you want to play something else?
+
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+
+  utter_did_that_help:
+  - text: Did that help you?
+
+  utter_end_game:
+  - text: "Welldone!"
+
+  utter_happy:
+  - text: Great, carry on!
+
+  utter_goodbye:
+  - text: Goodbye, Sweetie! Have a fantastic day ahead!
+  - text: Bye bye Sunshine! Take care!
+  - text: See you later! Have a great day!
+  - text: Farewell! Until next time!
+  - text: Im here if you want to play next time. Bye!
+
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+- utter_greet
+
+- utter_engagement_today_happy
+- utter_engagement_today_unhappy
+- utter_happy_day
+- utter_propose_game
+- utter_affirm_image
+- utter_deny
+- utter_what_else
+- utter_next_image
+- utter_goodbye
+- utter_end_game

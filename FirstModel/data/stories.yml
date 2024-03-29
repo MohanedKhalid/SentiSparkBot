@@ -1,0 +1,102 @@
+version: "3.1"
+
+stories:
+
+- story: User starts conversation
+  steps:
+  - intent: start
+  - action: utter_greet
+
+- story: Start and play
+  steps:
+  - intent: start
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_engagement_today_happy
+  - intent: engagement_today_happy
+  - action: utter_happy_day
+  - action: utter_propose_game
+  - intent: affirm
+  - action: utter_affirm_image
+  - intent: child_response
+  - action: utter_what_else
+  - intent: child_response
+  - action: utter_what_else
+  - intent: child_response
+  - action: utter_next_image
+  - intent: child_response
+  - action: utter_what_else
+  - intent: child_response
+  - action: utter_what_else
+  - intent: child_response
+  - action: utter_end_game
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: Play Game and Review Images (Happy Path)
+  steps:
+  - intent: affirm
+  - action: utter_affirm_image
+
+  # Start loop
+  - checkpoint: review_images_loop
+
+  # Review each image
+  - intent: child_response
+  - action: utter_what_else
+  - intent: child_response  # User confirms they have finished reviewing the current image
+  - action: utter_next_image  # Bot shows the next image
+
+  # Check if there are more images to review
+  - checkpoint: review_images_loop  # Loop back to review next image
+
+  # User indicates they want to stop reviewing images
+  - intent: goodbye
+  - action: utter_goodbye  # End the conversation
+
+  # End loop (not needed if using checkpoints)
+
+- story: Propose game and play
+  steps:
+  - intent: start
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_engagement_today_happy
+  - intent: engagement_today_happy
+  - action: utter_happy_day
+  - action: utter_propose_game
+  - intent: affirm
+  - action: utter_affirm_image
+  - intent: child_response
+  - action: utter_what_else
+  - intent: child_response
+  - action: utter_next_image
+  - intent: child_response
+  - action: utter_end_game
+
+- story: Deny game proposal
+  steps:
+  - intent: start
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_engagement_today_unhappy
+  - action: utter_propose_game
+  - intent: deny
+  - action: utter_deny
+
+- story: Deny game proposal
+  steps:
+  - intent: start
+  - action: utter_greet
+  - intent: engagement_today_unhappy
+  - action: utter_engagement_today_unhappy
+  - action: utter_propose_game
+  - intent: deny
+  - action: utter_deny
+
+

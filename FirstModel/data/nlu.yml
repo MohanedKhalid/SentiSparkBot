@@ -1,0 +1,396 @@
+version: "3.1"
+nlu:
+- intent: start
+  examples: |
+    - /start
+    - start
+    - get started
+    - hi
+    - hello
+    - begin
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good afternoon
+
+- intent: engagement_today_happy
+  examples: |
+    - I played with my toys.
+    - I drew a picture.
+    - I read a book.
+    - I went to the park.
+    - I watched my favorite cartoon.
+    - I helped mom/dad with cooking.
+    - I built a fort.
+    - I played games with my friends.
+    - I practiced riding my bike.
+    - I did some coloring.
+    - I played a game on my tablet.
+    - I had a tea party with my stuffed animals.
+    - I practiced my dance moves.
+    - I worked on a puzzle.
+    - I went for a walk with my family.
+    - I played soccer in the backyard.
+    - I practiced writing my letters.
+    - I built a tower with blocks.
+    - I pretended to be a superhero.
+    - I made a spaceship out of cardboard boxes.
+    - I played with my pet.
+    - I created a story with my action figures.
+    - I made a necklace out of beads.
+    - I sang and danced to my favorite songs.
+    - I played hide and seek.
+    - I made a sandcastle at the beach.
+    - I painted a picture.
+    - I played with water balloons.
+    - I helped plant flowers in the garden.
+    - I played dress-up.
+    - I had a picnic with my toys.
+    - I practiced counting with my toys.
+    - I made a house out of blankets and pillows.
+    - I played with play dough.
+    - I practiced my magic tricks.
+    - I played with bubbles in the backyard.
+    - I made a card for someone special.
+    - I practiced my singing.
+
+- intent: engagement_today_unhappy
+  examples: |
+    - I didn't do much today.
+    - I didn't feel like doing anything today.
+    - I stayed indoors all day.
+    - I had a quiet day today.
+    - I didn't go out today.
+    - I didn't feel like playing today.
+    - I did nothing.
+    - It was boring.
+    - I fought with my friends.
+    - My teacher scolded me.
+    - My mother was angry with me.
+
+#- intent: inform_day
+#  examples: |
+#    - I'm good.
+#    - It was good. I played with my friends
+#    - I drew a picture with crayons, and my mom said it was good!
+#    - Oh it's so good today. dada bought me a chocolate.
+#    - I played with my brother and finished my homework.
+#    - im good
+#    - played with my brother
+
+- intent: child_response
+  examples: |
+    - A beautiful landscape with colorful trees.
+    - A cozy house or cabin.
+    - The sun setting or rising in the distance.
+    - Leaves falling from the trees.
+    - I can see sun rising and many trees in the picture.
+    - It's morning view and I can see a house made up of woods.
+    - A beautiful sky with lot of birds and many leaves are scattered on the ground.
+    - I think it is a park and many people are walking around.
+    - A big tree with full of leaves in the center and small plants.
+    - People are wearing different colour dress.
+    - I see a big tree with lots of green leaves and people standing around it.
+    - There are some kids like me, and they are holding hands.
+    - There are flowers and grass, and the sky is blue with white clouds.
+    - sun rising
+    - Let's count the birds flying by!
+    - I bet there are rabbits hopping around.
+    - The clouds look like fluffy pillows.
+    - Can we have a campfire and tell stories?
+    - I wonder if there are wildflowers blooming.
+    - Let's pretend we're explorers charting new lands!
+    - The sunrise makes the world feel magical!
+    - We should build a bridge over that stream!
+    - I want to catch fireflies there at night!
+    - That's where fairies live!
+    - Let's build a treehouse there!
+    - I want to climb those trees!
+    - Can we have a picnic there?
+    - Let's make a wish on the rising sun!
+    - I wonder if there are bears in those woods.
+    - The mountains look like giants sleeping.
+    - Let's collect rocks and make a rock garden.
+    - I wish I could fly with the birds.
+    - The leaves look like they're dancing!
+    - The house must have a cozy fireplace.
+    - We could have a treasure hunt there!
+    - Let's find a stream and skip stones.
+    - The trees look like they're whispering secrets.
+    - The sky is like a painting!
+    - I want to draw this in my sketchbook.
+    - Maybe there's a hidden cave behind those trees!
+    - The mountains look like a giant puzzle!
+    - The wind sounds like it's singing a song.
+    - The trees must have so many secrets!
+    - Let's collect pinecones and make crafts.
+    - I wish we could stay there forever!
+    - The shadows look like friendly monsters.
+    - Maybe there's a hidden treasure buried there!
+    - The mountains look like they're guarding the valley.
+    - Let's take photos and make a scrapbook!
+    - The leaves are like nature's confetti!
+    - Can we bring our dog to play there?
+    - Let's lie down and watch the clouds move.
+    - I want to learn about all the plants and animals there!
+    - It looks like a place from a storybook!
+    - I bet we could find cool rocks to collect!
+    - Let's make a bird feeder and hang it there!
+    - The sun looks like it's giving the trees a hug.
+    - We should plant flowers and make it even prettier!
+    - I wish we could see the stars from there at night!
+    - Let's make a map of the whole area!
+    - The birds must have the best view up there!
+    - Can we have a tea party under the trees?
+    - I want to learn how to climb like a squirrel!
+    - The flowers must smell amazing!
+    - Maybe there's a friendly bear living nearby!
+    - I want to learn all the bird songs!
+    - Let's make a scarecrow to protect the garden!
+    - The trees must have so many stories to tell!
+    - We should bring binoculars and birdwatch!
+    - The mountains look like they're covered in a fuzzy blanket.
+    - Let's have a race down the hill!
+    - Maybe we could build a fort in the woods!
+    - The sunrise feels like a warm hug!
+    - Can we go fishing in the stream?
+    - I wonder if there are hidden waterfalls.
+    - Let's make a treasure map and hide it for someone to find!
+    - The leaves look like they're doing a dance just for us!
+    - The house looks like a cozy cabin in the woods!
+    - I want to learn how to make a campfire!
+    - The birds must have the best view up there!
+    - Let's build a birdhouse and hang it in the trees!
+    - The mountains look like they're playing hide-and-seek!
+    - Can we go on a nature scavenger hunt?
+    - I bet there are bunnies hopping around somewhere!
+    - Let's have a picnic and invite our friends!
+    - The clouds look like fluffy cotton candy!
+    - I want to climb to the very top of the tallest tree!
+    - Let's make leaf rubbings with the fallen leaves!
+    - I wonder if there are hidden caves to explore!
+    - The sunrise looks like it's painting the sky!
+    - Can we bring snacks and have a movie night under the stars?
+    - Let's make a wish on the first star we see!
+    - The trees look like they're doing yoga poses!
+    - I want to learn how to identify all the plants!
+    - Let's make a nature journal and write down everything we see!
+    - The mountains look like they're playing peek-a-boo!
+    - Maybe there are hidden fairies living there!
+    - Can we have a bonfire and roast marshmallows?
+    - I wonder if there are any magical creatures hiding there!
+    - Let's bring binoculars and try to spot all the different birds!
+    - The sunrise looks like a painting come to life!
+    - That tree is huge
+    - So many people under the tree
+    - Birds are flying high
+    - Flowers are so colorful
+    - I love trees
+    - I see people of all ages
+    - Where do you think they're headed?
+    - I want to sit under that tree
+    - It looks like a busy place
+    - The tree provides shade
+    - I wonder if there are squirrels in the tree
+    - The birds must have a nice view from up there
+    - I wonder what they're talking about
+    - I like the sound of the birds
+    - Those flowers are so small
+    - I wish I could fly like those birds
+    - The tree branches are reaching out
+    - It's a sunny day under the tree
+    - I see people with backpacks
+    - I want to run around the tree
+    - I bet there are bugs in the tree
+    - Those flowers must smell nice
+    - The leaves are moving in the wind
+    - I want to touch the tree bark
+    - The tree looks strong
+    - The birds are singing
+    - I want to swing from the tree branches
+    - I can see different types of people
+    - I want to know their stories
+    - The tree looks peaceful
+    - The sky is blue behind the tree
+    - People are walking at different speeds
+    - I like watching the birds fly
+    - The tree has so many branches
+    - I see people holding hands
+    - It's a happy place under the tree
+    - I can feel a breeze under the tree
+    - The flowers are swaying
+    - I wonder if there are animals under the tree
+    - It's a colorful scene
+    - The birds are gliding gracefully
+    - I want to explore under the tree
+    - The tree branches are like arms
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yes lets play
+    - yeah lets play
+    - i love to play
+    - sure
+    - sounds interesting
+    - Yes, let's play!
+    - Sounds fun, I'm in!
+    - Sure, what game is it?
+    - I love playing games, let's do it!
+    - Yay, I want to play!
+    - I'm excited, what do we do?
+    - Can't wait to play with you!
+    - Yes, please tell me about the game!
+    - I'm ready for some fun!
+    - Absolutely, I love playing with you!
+    - That sounds awesome, let's play!
+    - I'm super excited to play with you!
+    - I've been waiting for someone to play with, let's go!
+    - Yes, I've been wanting to play a game!
+    - I'm all ears, tell me about the game!
+    - Playing games is my favorite, count me in!
+    - I'm ready to have some fun, let's play!
+    - Yes, I love playing games with you!
+    - I can't wait to see what game you have in mind!
+    - Playing together sounds like a blast, let's do it!
+    - Absolutely! I'm ready for some fun!
+    - Yes, let's play together and have a great time!
+    - That sounds like a blast, let's get started!
+    - I'm up for it! What game are we playing?
+    - Yes, I'm totally in the mood for a game!
+    - Yes, playing games with you is always fun!
+    - Count me in! I'm excited to see what game you have!
+    - Playing together is the best! Let's do it!
+    - Yes please! I love playing games with you!
+    - Yes, let's play! I've been waiting for this!
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - im bored
+    - i dont want to play
+    - not interested
+    - I dont think so
+    - dont like that
+    - I don't know
+    - I don't see anything
+    - it's boring
+    - i am bored now
+    - dont want to play anymore
+    - im feeling bored now
+    - stop the game
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - I'm feeling great!
+    - I'm happy today!
+    - I feel awesome!
+    - I'm excited!
+    - I'm feeling really good!
+    - I'm fantastic!
+    - I'm on top of the world!
+    - I'm in a good mood!
+    - I'm full of energy!
+    - I'm thrilled!
+    - I'm okay.
+    - I'm fine.
+    - I'm alright.
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
+    - I feel okay, I guess.
+    - Not bad.
+    - I'm so-so.
+    - I'm just chilling.
+    - I'm hanging in there.
+    - I'm doing alright.
+    - It's been an okay day.
+    - I'm feeling down.
+    - I'm sad.
+    - I'm not feeling great.
+    - I'm a bit upset.
+    - I'm feeling low.
+    - I'm disappointed.
+    - I'm feeling blue.
+    - I'm not in the best mood.
+    - I'm feeling stressed out.
+    - I'm anxious.
+    - I'm worried.
+    - I'm feeling frustrated.
+    - I'm angry.
+    - I'm irritated.
+    - I'm feeling tired.
+    - I'm exhausted.
+    - I'm feeling drained.
+    - I'm sleepy.
+    - I'm feeling bored.
+    - I'm not really feeling anything.
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
