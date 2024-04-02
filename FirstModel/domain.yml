@@ -27,27 +27,62 @@ responses:
 
   utter_engagement_today_unhappy:
   - text: I'm sorry to hear that you're feeling down.
+  - text: I'm here for you if you need someone to talk to.
+  -	text: It's okay to feel sad sometimes. Would you like to do something to help you feel better?
+  - text: You're stronger than you think. This feeling won't last forever.
+  -	text: Take a deep breath and know that I'm here for you. We can get through this together.
+  -	text: Let's take some time to do something you enjoy. What's one thing that always makes you happy?
+
 
   utter_engagement_today_happy:
   - text: It's wonderful to hear that you're feeling great!What else did you do?
   - text: Awesome! Keep up the good mood! Anything else you did today?
   - text: That sounds great! What else did you do?
   - text: Anything else you did today?
+  - text: Hip, hip, hooray for your happy day! Tell me more about the fun stuff you did!
+  - text: I'm over the moon to hear that you're feeling happy! What's making you smile today?
+  - text: Wow, sounds fun! What else happened?
+  - text: oh nice, can you share more about what made you so happy?
+  - text: Happy vibes all around! What else brought a big grin to your face today?
+
 
   utter_happy_day:
   - text: Wow! That sounds like a fun-filled day!
   - text: That sounds like a lot of activities! You had a busy day!
   - text: It's great to hear about your day! You did so many things!
   - text: Sounds like you had a wonderful time! Keep exploring and having fun!
+  -	text: You're a busy bee! What else did you do?
+  -	text: That's amazing! What was your favourite part?
+  -	text: I'm so happy to hear about your fun-filled day!
+  -	text: Your day sounds like a dream come true! What's next on your list?
+  -	text: Friendship fun! Did you have a favourite game you played?
+  -	text: Helping makes a big difference! Did you have fun while you worked?
+  - text: I love the park! Did you see any birds or butterflies while you were there?
+  -	text: Running around in the fresh air it's good! What was your favourite thing to do at the park?
+  -	text: I bet your crafts turned out amazing! What was your favourite thing you made?
+
 
   utter_propose_game:
   - text: I know a game that we can play together and have fun, do you want to play?
   - text: And what about now? let's play a game.
+  -	text: Do you want to play a game with me? I promise it'll be lots of fun!
+	-	text: I have an idea! Let's play a game! What do you think?
+  -	text: I've got an awesome game idea! Want to see it?
+  -	text: How about we take a break and play a game? It'll be a blast!
+  -	text: Let's make today awesome by playing a game together! Are you in?
+  -	text: You're all done with your homework! Want to play a game as a reward?
+
 
   utter_affirm_image:
   - text: Yay! Let's do it! I found this interesting picture. Let me know what do you see in this picture.
+  - text:	What do you think is happening in this picture?
+  - text: Can you tell me a story about what's happening?
+
     image: https://i.imgur.com/EkLBFrM.jpg
   - text: Hurray! Here's the first picture. What do you think about this picture?
+  - text:	If you were in this picture, what would you be doing?
+  - text:	Use your imagination! What do you think could happen next?
+
     image: https://i.imgur.com/EkLBFrM.jpg
   - text: Let's play! What comes to your mind first when you see this picture?
     image: https://i.imgur.com/EkLBFrM.jpg
@@ -58,6 +93,12 @@ responses:
   - text: Keep going! What else do you see?
   - text: Cool! Anything else?
   - text: Anything else catches your eyes?
+  - text:	Your imagination is incredible! I'm so impressed!
+  - text:	You're doing awesome! Keep sharing your ideas with me!
+  - text:	What's your favourite part of the image?
+  - text:	Did you know that this picture was taken in (   )?
+
+
 
   utter_next_image:
   - text: You're doing awesome! Here's another image. What do you see?
@@ -66,6 +107,12 @@ responses:
     image: https://i.imgur.com/YD1UP6N.jpg
   - text: Good enough! Want to see another image? Here it is.
     image: https://i.imgur.com/YD1UP6N.jpg
+   - text: Can you spot any animals/people/objects in this picture?
+   - text:	What do you think is happening in this scene?
+   - text:	You're really good at noticing details! I love your description of the image.
+   - text:	You're doing a fantastic job exploring these images! Keep it up!
+
+
 
   utter_deny:
   - text: Alright, no problem. Let me know if you change your mind!
@@ -73,26 +120,47 @@ responses:
   - text: Okay, no problem! Is there something else you'd like to do instead?
   - text: If you don't feel like playing a game right now, that's perfectly fine. Do you want to do something else?
   - text: Do you want to play something else?
+  - text:	No problem at all! How about we read a story together?
+  - text:	It's up to you! Would you like to explore some interesting facts.
+
+
 
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/nGF1K8f.jpg
+  - text: I can see you're feeling down. Here's something to brighten your day!
+  - text:	Look at this adorable picture of a puppy playing in the sunshine. It's sure to bring a smile to your face!
+
 
   utter_did_that_help:
-  - text: Did that help you?
+  - text: Did that help you,your happiness is important to me?
+  - text: Did that help you,your happiness is important to me?	If there's anything else I can do to help or if you want to talk more about it, just let me know. I'm here to listen.  (and we show him an image again )
 
   utter_end_game:
   - text: "Welldone!"
+  - text:	Congratulations on completing the game! You did a fantastic job solving all the challenges!
+  - text:	I'm so proud of how well you played and persevered until the end!
+  - text:	Is there anything you'd like to try differently next time?
+  - text:	How did you feel about the game?
+
 
   utter_happy:
   - text: Great, carry on!
+  - text:	I'm so happy to see you enjoying yourself! Keep having fun.
+  - text:	You're doing a fantastic job! Keep up the great work.
+  - text:	Thank you for playing the game with me! I had a lot of fun, and I hope you did too!
 
+
+  
   utter_goodbye:
   - text: Goodbye, Sweetie! Have a fantastic day ahead!
   - text: Bye bye Sunshine! Take care!
   - text: See you later! Have a great day!
   - text: Farewell! Until next time!
   - text: Im here if you want to play next time. Bye!
+  - text: Take care and have a wonderful day filled with laughter and joy!
+  - text: Thank you for spending time with me!
+
 
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
